@@ -129,7 +129,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, ion-icon, a, button, time { display: block; }
 
 button {
   font: inherit;
@@ -517,8 +517,8 @@ main {
 .service-title { margin-bottom: 20px; }
 
 .service-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  /*display: grid;*/
+  /*grid-template-columns: 1fr;*/
   gap: 20px;
 }
 
@@ -526,6 +526,7 @@ main {
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
+  margin-bottom: 30px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
