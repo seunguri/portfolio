@@ -134,6 +134,13 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// mailto form custom field input
+document.getElementsByTagName("form")["contact"].onsubmit = function (){
+  const body = `name: ${this.fullname.value}
+  email: ${this.email.value}
+  message: ${this.message.value}`;
+  window.location.href = `mailto:safg0421@gmail.com?subject=안녕하세요.김승아님 포트폴리오에서 메일 보냅니다.&body=${body}`
+}
 
 
 // page navigation variables

@@ -202,7 +202,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Project</button>
           </li>
 
           <li class="navbar-item">
@@ -233,7 +233,7 @@
 
         <section class="about-text">
           <p>
-            <h2>0에서 1.5를 만들어 본 Backend 개발자 김승아입니다.</h2>
+            <h2>0에서 1을 만드는 Backend 개발자 김승아입니다.</h2>
           </p>
           <div style="margin-bottom: 30px; margin-top: 30px">
             <p>
@@ -335,7 +335,7 @@
 
                 <p class="service-item-text">
                   기술은 계속해서 변하거나 나타나고, 이 변화들이 기반이 되어 혁신이 일어나고 있습니다.<br>
-                  도태된다는 두려움보다 호기심과 덕후같은 설렘을 가지고 변화를 배우고자 합니다.<br>
+                  도태된다는 두려움보다 호기심과 덕후같은 설렘을 가지고 변화를 배우고 있습니다.<br>
                   현재는 AR/VR에 관심을 가지고 경험을 쌓고 있습니다.
                 </p>
               </div>
@@ -588,10 +588,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="project">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Project</h2>
         </header>
 
         <section class="projects">
@@ -663,7 +663,7 @@
                   <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Sendtime</h3>
 
                 <p class="project-category">Web development</p>
 
@@ -678,10 +678,10 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/bonding.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Bonding</h3>
 
                 <p class="project-category">Web development</p>
 
@@ -699,7 +699,7 @@
                   <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Teampang</h3>
 
                 <p class="project-category">Web design</p>
 
@@ -717,7 +717,7 @@
                   <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Fact Report</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -735,7 +735,7 @@
                   <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Doranssam 도란쌤.</h3>
 
                 <p class="project-category">Web design</p>
 
@@ -753,7 +753,7 @@
                   <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Backend Recurit</h3>
 
                 <p class="project-category">Web design</p>
 
@@ -771,7 +771,7 @@
                   <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">Machine learning</h3>
 
                 <p class="project-category">Web development</p>
 
@@ -789,7 +789,7 @@
                   <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Task Manager</h3>
+                <h3 class="project-title">High Hat</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -1038,17 +1038,17 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="mailto:safg0421@gmail.com?subject=안녕하세요.포트폴리오에서 메일 보냅니다." class="form" method="post" enctype="text/plain" data-form>
+          <form name="contact" class="form" enctype="text/plain" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" onclick="sendMail()" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Mail</span>
             </button>
