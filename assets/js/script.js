@@ -80,11 +80,12 @@ const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
 
+  console.log(selectedValue)
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (JSON.parse(filterItems[i].dataset.category).includes(selectedValue)) {
+    } else if (JSON.parse(filterItems[i].dataset.categories).includes(selectedValue)) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
